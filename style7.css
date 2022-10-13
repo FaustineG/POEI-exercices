@@ -1,0 +1,139 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --border-radius: 32px;
+  --white: #ffffff;
+  --lightgrey: #f9f9f9;
+  --grey: #e5e5e5;
+  --black: #292929;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  background: var(--lightgrey);
+}
+
+#first-page {
+  display: flex;
+}
+
+#home-img {
+  width: 50%;
+}
+
+#logo {
+  position: absolute;
+  padding: 2vh 1vw;
+}
+
+#blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  top: 0;
+  padding: 0 2rem;
+}
+
+#blog-header h1 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#blog-header section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--grey);
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  align-items: center;
+}
+
+#contact-form form label {
+  width: 100%;
+}
+
+button {
+  background: var(--black);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  padding: 0 1em;
+
+  width: fit-content;
+  min-width: 122px;
+  min-height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+}
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 1em 0;
+  text-align: center;
+}
+
+input[type="email"] {
+  border-radius: var(--border-radius);
+  border: 2px solid #cfcfcf;
+  width: 100%;
+  min-height: 48px;
+}
+
+nav:hover,
+button:hover {
+  cursor: pointer;
+}
+
+/* #all-articles {
+  display: flex;
+  grid-template-columns: auto ;
+  flex-direction: row;
+}
+
+#all-articles aside {
+  max-width: 30em;
+} */
+
+/* OU */
+
+#all-articles{
+  display: grid;
+  grid-template-columns: auto 30em;
+}
